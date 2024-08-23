@@ -14,6 +14,6 @@ Repository for data and code associated with McLaughlin HMM paper
     -   **00_HMM_Functions.R**: Creation of HMM functions
     -   **00_HMM_Simulation.R**: Creation of function to simulate time series data for a single species
     -   **01_HMM-McL-boot.R**: Code to run HMM functions on McLaughlin Data
-    -   **02_HMM-McL-sim.R**: Code for checking accuracy of model estimates per species (produces Fig S3, corresponds to Pluntz et al. Fig A4)
-    -   **03_HMM-McL-cor.R**: Code for checking correlation of data vs correlation from estimation procedure (produces Fig S2, corresponds to Pluntz et al. Fig A6)
+    -   **02_HMM-McL-sim.R**: Code for checking accuracy of model estimates per species (Fig S3)
+    -   **03_HMM-McL-cor.R**: Code for checking correlation of data vs correlation from estimation procedure (Fig S2)
     -   **04_HMM-McL-analysis.R**: Analyses and figures for paper
