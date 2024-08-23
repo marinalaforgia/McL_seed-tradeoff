@@ -6,7 +6,7 @@ Repository for data and code associated with McLaughlin HMM paper
     -   **McL-community-PA-data_annuals_2019.csv**: presence absence of annual species from 2000-2019 in 400 plots at McLaughlin Natural Reserve
     -   **HMM-meta-mcl.csv**: metadata on McLaughlin community data
     -   **McL_seed-traits.csv**: seed trait data
-    -   **seed-trait-metadata.csv**: metadata on columns found in McL_seed-traits.csv
+    -   **metadata.csv**: metadata for each csv file
     -   **McL-species-boot.RDS**: HMM output from *01_HMM-McL-boot.R*
     -   **McL-sim-species-validation-50.RDS**: output of *02_HMM-McL-sim.R* using 50 patches (min number of patches a species can occur in)
     -   **McL-sim-154-correlation.RDS**: output of of *03_HMM-McL-cor.R* using simulated data from 154 patches (average number of patches a species occurred in)
