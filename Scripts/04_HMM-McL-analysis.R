@@ -158,7 +158,7 @@ letters_df <- data.frame(
 fig1.b <- ggplot(mcl.df.q[mcl.df.q$FunGroup != "Native grass",], aes(x = FunGroup, y = c, col = FunGroup, shape = FunGroup)) +
   geom_boxplot(outliers = F) +
   geom_text(data = letters_df, aes(x = FunGroup, y = 0.26, label = label),
-            vjust = 0, size = 6, col = "black") +
+            vjust = 0, size = 5, col = "black") +
   geom_point(position = position_jitter(width = 0.35, height = 0), size = 1.8) +
   theme_classic() +
   theme(
@@ -166,9 +166,9 @@ fig1.b <- ggplot(mcl.df.q[mcl.df.q$FunGroup != "Native grass",], aes(x = FunGrou
     axis.line = element_blank(),
     panel.border = element_rect(linewidth = 1, fill = NA),
     legend.position = "none",
-    axis.title.y = element_text(size = 18),
+    axis.title.y = element_text(size = 16),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 16),
+    axis.text.y = element_text(size = 14),
     axis.text.x = element_blank(),
     
   ) +
@@ -182,16 +182,17 @@ fig1.c <- ggplot(mcl.df.q[mcl.df.q$FunGroup != "Native grass",], aes(x = FunGrou
   geom_boxplot(outliers = F) +
   geom_point(position = position_jitter(width = 0.35, height = 0), size = 1.8) +
   geom_text(data = letters_df, aes(x = FunGroup, y = 0.85, label = label),
-            vjust = 0, size = 6, col = "black") +
+            vjust = 0, size = 5, col = "black") +
   theme_classic() +
   theme(
     legend.title = element_blank(),
     axis.line = element_blank(),
     panel.border = element_rect(linewidth = 1, fill = NA),
     legend.position = "none",
-    axis.title.y = element_text(size = 18),
+    axis.title.y = element_text(size = 16),
     axis.title.x = element_blank(),
-    axis.text = element_text(size = 15),
+    axis.text.y = element_text(size = 14),
+    axis.text.x = element_text(size = 14),
   ) +
   scale_color_manual(values = fungroup_cols) +
   scale_shape_manual(values = fungroup_shapes) +
@@ -200,9 +201,9 @@ fig1.c <- ggplot(mcl.df.q[mcl.df.q$FunGroup != "Native grass",], aes(x = FunGrou
   labs(x = "",
        y = "Probability of \n temporal dispersal")
 
-fig1.bc <- ggarrange(fig1.b, fig1.c, ncol = 1, nrow = 2, labels = c("(b)", "(c)"), heights = c(1, 1.3), font.label = list(size = 17))
+fig1.bc <- ggarrange(fig1.b, fig1.c, ncol = 1, nrow = 2, labels = c("(b)", "(c)"), heights = c(1, 1.12), font.label = list(size = 17))
           
-fig1 <- ggarrange(fig1.a, fig1.bc, ncol = 2, nrow = 1, labels = c("(a)", "", ""), widths = c(1.7, 1.3), font.label = list(size = 17)) + 
+fig1 <- ggarrange(fig1.a, fig1.bc, ncol = 2, nrow = 1, labels = c("(a)", "", ""), widths = c(1.9, 1.3), font.label = list(size = 17)) + 
   bgcolor("white") +
   border(color = "white")
 
